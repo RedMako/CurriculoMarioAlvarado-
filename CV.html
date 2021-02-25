@@ -12,40 +12,79 @@
             Mario Alvarado
         </h1>
     </div>
+    <p id="edad" onmouseout="ocultaredad()" onmouseover="mostraredad()">Edad</p>
+
+
+    <button type="button" onclick="aparecerfoto() ">Desplegar Perfil</button> 
+    <button type="button" onclick="desaparecerfoto()"  style="background-color: rgb(218, 30, 30);">Ocultar Perfil</button>
+    <img src="silueta.png" id="Imagen">
     
-    <div id="Yo">
-        <p> <b>Correo: </b> mgabriel.alvarado10@gmail.com</p>
+    <div class="bloque">
+        <h2> Correo: </h2> 
+        <p> <b> mgabriel.alvarado10@gmail.com</b> </p>
     </div>
-    <div id="Perfil">
-        <h2>Perfil</h2> 
-        <p id="texto">  Soy un trabajador responsable y creativo, puedo trabajar bien bajo presion, ademas de poder
-            guiar a mi equipo de trabajo gracias a mi actitud, vision de liderzago y empatía.
+
+    <div class="bloque">
+        <h2>Acerca de mi</h2> 
+        <p class="texto">  Apasionado por el trabajo organizado, puedo adaptarme a cualquier equipo y liderarlo hacia el cumplimiento de los objetivos. <br><br>
+                        Algunas de mis caracteristicas son: </p>
+            <ul class="texto"> 
+                <li >Empatia</li>
+                <li >Liderazgo</li>
+                <li >Responsabilidad</li>
+                <li >Optimismo</li>
+                <li >Determinación</li>    
+                <li >Creatividad</li>
+            </ul>
         </p>
     </div>
 
-    <div id="Formacion">
-        <h2>Formación Academica</h2>
+    <div class="bloque">
+        <h2>Formación Académica</h2>
         <ul>
-            <li id="objeto_lista">Bachiller</li>
+            <li class="texto">Bachiller</li>
         </ul>
     </div>
 
-    <div id="Idiomas">
-        <h2>Idiomas</h2>
-        <ul>
-            <li> <pre id="objeto_lista">Español <hr>  => Idioma natal</pre></li>
-            <li> <pre id="objeto_lista">Ingles  <hr>  => Dominio avanzado</pre> </li>
-            <li> <pre id="objeto_lista">Portugues <hr> => Dominio básico</pre> </li>
-        </ul>
+    <div class="bloque">
+        <h2>Idiomas</h2> 
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th> <pre class="textolista">Lenguas </pre>  </th>
+                    <th> <pre class="textolista">         Nivel/Dominio</pre></th>
+                </tr>
+            </thead>
+            <tbody id="objeto_idioma">
+                <tr>
+                    <td class="texto">Español </td>
+                    <td> <pre class="texto">                   Idioma Natal</pre></td>   
+                </tr> 
+                <tr>
+                    <td class="texto">Ingles </td>
+                    <td><pre class="texto">                     Avanzado</pre></td>
+                </tr>
+                <tr>
+                    <td class="texto">Portugues</td>
+                    <td><pre class="texto">                      Básico</pre></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div id="Habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li id="objeto_lista">Manejo de Windows oiffce: Word,Excel y PowerPoint</li>
-            <li id="objeto_lista">Dominio básico en Adobe Illustrator</li>
-            <li id="objeto_lista">Dominio Intermedio en edición de video</li>
+    <div class="bloque">
+        <h2>Habilidades</h2> 
+        <button type="button" onclick="mostrar()">Mostrar Habilidades</button>
+        <button type="button" onclick="ocultar()" style="background-color: rgb(218, 30, 30);">Ocultar Habilidades</button>
+        <ul id="objeto_lista" class="texto">
+            <li >Dominio de Microsoft: Word, Excel y PowerPoint</li> <br>
+            <li >Dominio básico en Adobe Illustrator</li> <br>
+            <li >Dominio Intermedio en edición de videos</li> <br>
+            <li >Capacidad para negociar</li> <br> 
+            <li >Resolución efectiva de problemas</li> <br>
+            <li >Redacción de informes</li>
         </ul>
     </div>
+    <script src="CV.js"></script>
 </body>
 </html>
